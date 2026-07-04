@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --text-color: black;
+    --paragraph-color: rgb(101, 99, 99);
+}
+
+.home-container{
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.home-text {
+    margin-top: 20px;
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+.home-text p{
+    margin-top: 80px;
+    font-size: 15px;
+    color: var(--paragraph-color);
+}
