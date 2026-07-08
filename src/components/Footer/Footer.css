@@ -1,0 +1,87 @@
+.footer {
+  background-color: #fdeeee;
+  padding: 60px 24px 40px;
+  text-align: center;
+  margin: 0 40px 24px;
+}
+
+.footer-subscribe h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.footer-subscribe p {
+  color: #777;
+  margin-bottom: 24px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: rgb(245 232 230);
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-nav a.active {
+  color: black;
+  font-weight: 600;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-socials a {
+  background-color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  margin: 0 -24px -40px;
+}
