@@ -1,5 +1,6 @@
 import "./Home.css"
 import ProductCard from "../../components/ProductCard/ProductCard"
+import SortDropdown from "../../components/SortDropdown/SortDropdown";
 import Navbar from "./../../components/Navbar/Navbar"
 import manInBlackTshirt from "../../assets/products/men/man-in-black-tshirt.jpg";
 import { products } from "../../data/productData";
@@ -9,9 +10,12 @@ const Home = () => {
         <>
         <div className="home-container">
             <div className="home-text">
-                <p>Home / Shop</p>
-                <h1>Shop</h1>
-                <p>Showing 1-8 of 10 results</p>
+                    <p>Home / Shop</p>
+                    <h1>Shop</h1>
+                <div className="results-sort-row">
+                    <p>Showing 1-8 of 10 results</p> 
+                    <SortDropdown />
+                </div>     
             </div>
             <div className="product-grid">
                 {products.map((product) => (

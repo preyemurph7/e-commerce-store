@@ -17,6 +17,12 @@
     color: var(--text-color);
 }
 
+.results-sort-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .home-text p{
     margin-top: 80px;
     font-size: 15px;

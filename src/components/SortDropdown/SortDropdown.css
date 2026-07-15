@@ -1,0 +1,40 @@
+.sort-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-dropdown-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  min-width: 220px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sort-dropdown-list li {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sort-dropdown-list li:hover {
+  background-color: #f5f5f5;
+}
