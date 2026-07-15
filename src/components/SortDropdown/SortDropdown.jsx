@@ -1,32 +1,39 @@
-import { useState } from "react"
-import { ChevronDown } from "lucide-react"
-import "./SortDropdown.css"
+import { useState, useEffect, useRef } from "react";
+import { ChevronDown } from "lucide-react";
+import { sortOptions } from "../../data/sortOptions";
+import "./SortDropdown.css";
 
-const sortOptions = [
-  "Default sorting",
-  "Sort by average rating",
-  "Sort by latest",
-  "Sort by price: low to high",
-  "Sort by price: high to low",
-]
-
-const SortDropdown = () => {
+const SortDropdown = ({ currentSort, onSortChange }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState(sortOptions[0]);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
-  }
+  };
 
   const handleSelect = (option) => {
-    setSelected(option);
+    onSortChange(option);
     setIsOpen(false);
-  }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className="sort-dropdown">
+    <div className="sort-dropdown" ref={dropdownRef}>
       <button className="sort-dropdown-header" onClick={toggleDropdown}>
-        <span>{selected}</span>
+        <span>{currentSort}</span>
         <ChevronDown size={16} />
       </button>
 
@@ -40,7 +47,7 @@ const SortDropdown = () => {
         </ul>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default SortDropdown
+export default SortDropdown;
