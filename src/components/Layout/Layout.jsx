@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import GoToCartButton from "../GoToCartButton/GoToCartButton";
 import Footer from "../Footer/Footer";
-import { LayoutList } from "lucide-react";
 
 const Layout = () => {
     return(
         <>
         <Navbar />
+        <GoToCartButton />
         <Outlet />
         <Footer/>
         </>
