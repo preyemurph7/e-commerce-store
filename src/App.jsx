@@ -5,11 +5,13 @@ import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import { CartProvider } from "./Context/CartContext";
 import './App.css'
 
 function App() {
   
   return (
+    <CartProvider>
       <BrowserRouter>
         <Routes>
           <Route element={<Layout/>}>
@@ -19,6 +21,7 @@ function App() {
              </Route>      
         </Routes>
     </BrowserRouter> 
+    </CartProvider>
   );
 }
 
