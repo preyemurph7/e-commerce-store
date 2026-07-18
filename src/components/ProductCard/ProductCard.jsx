@@ -2,7 +2,9 @@ import { useState } from "react"
 import "./ProductCard.css"
 
 
-const ProductCard = ({ image, category, title, price, colorAvailable, size }) => {
+const ProductCard = ({ id, image, category, title, price, colorAvailable, size }) => {
+
+
     return (
         <div className="product-card">
             <img src={image} alt={title} className="product-image" />
@@ -22,10 +24,8 @@ const ProductCard = ({ image, category, title, price, colorAvailable, size }) =>
                     </div>
                 ))}
                 
-            </div>    
-            </div>
-           
-             
+            </div>  
+            </div>          
         </div>
         
         
