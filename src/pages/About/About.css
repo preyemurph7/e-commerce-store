@@ -1,0 +1,146 @@
+.about-container {
+    padding: 0 24px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.about-dash {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto 20px;
+}
+
+.about-text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.about-text p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.parallax-rectangle{
+    margin-top: 50px;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+    min-height: 800px;
+
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-dash {
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 0;
+}
+
+.parallax-rectangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.parallax-text,
+.parallax-side-text {
+  position: relative;
+  z-index: 2;
+  max-width: 45%;
+}
+
+.parallax-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.parallax-side-text {
+    font-size: large;
+    font-weight: bold;
+}
+
+.how-it-started-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.how-it-started-text h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.how-it-started-text {
+    max-width: 700px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.how-it-started-dash {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto 20px;
+}
+
+.how-it-started-text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.last-container {
+  display: flex;
+  align-items: stretch;
+  max-width: 1300px;
+  margin: 120px auto;
+  gap: 0;
+}
+
+.left-side-div {
+  flex: 1;
+  background-color: #fdeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 50px;
+  gap: 20px;
+}
+
+.left-side-div h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.right-image {
+  flex: 1;
+  aspect-ratio: 3 / 2;
+  background-size: cover;
+  background-position: center;
+}
