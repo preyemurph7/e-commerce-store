@@ -1,0 +1,39 @@
+.go-to-cart-btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #2563eb;
+    gap: 10px;
+    right: 5px;
+    top: 240px;
+    font-size: 15px;
+    padding: 15px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.2 ease;
+}
+
+.go-to-cart-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.go-to-cart-btn:hover .cart-icon {
+    animation: disappearReappear 0.3s ease-in-out;
+}
+
+@keyframes disappearReappear {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-35px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
