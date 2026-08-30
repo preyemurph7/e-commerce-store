@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Home.css";
+import ProductModal from "../../components/ProductModal/ProductModal";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import SortDropdown from "../../components/SortDropdown/SortDropdown";
 import { products } from "../../data/productData";
@@ -7,6 +8,7 @@ import { sortOptions } from "../../data/sortOptions";
 
 const Home = () => {
   const [currentSort, setCurrentSort] = useState(sortOptions[0]);
+  const [quickViewProduct, setQuickViewProduct] = useState(null);
 
   const getSortedProducts = () => {
     const sorted = [...products];
@@ -44,6 +46,7 @@ const Home = () => {
               price={product.price}
               colorAvailable={product.colorAvailable}
               size={product.size}
+              onQuickView={setQuickViewProduct}
             />
           ))}
         </div>
@@ -52,6 +55,13 @@ const Home = () => {
           <p>No more products to show.</p>
         </div>
       </div>
+
+      {quickViewProduct && (
+        <ProductModal
+          product={quickViewProduct}
+          onClose={() => setQuickViewProduct(null)}
+        />
+      )}
     </>
   );
 };
