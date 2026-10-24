@@ -10,6 +10,7 @@ import Contact from './pages/Contact/Contact';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import { CartProvider } from "./Context/CartContext";
 import { QuickViewProvider } from "./Context/QuickViewContext";
+import Checkout from './pages/Checkout/Checkout';
 import './App.css'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
              <Route path="/about" element={<About/>} />
              <Route path="/contact" element={<Contact/>} />
              <Route path="/product/:id" element={<ProductDetail/>} />
+             <Route path="/checkout" element={<Checkout/>} />
              </Route>      
         </Routes>
     </BrowserRouter> 

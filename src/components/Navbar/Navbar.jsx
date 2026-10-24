@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom"
 import Logo from "../Logo/Logo"
 import { Search, ShoppingCart } from "lucide-react"
+import { useCart } from "../../Context/CartContext"
 import './Navbar.css'
 
 const Navbar = () => {
+    const { cartCount, cartTotal, openCart } = useCart();
+
     return(
         <>
         <nav className="navbar">
@@ -23,11 +26,11 @@ const Navbar = () => {
             <Search size={18}  strokeWidth={3.0} />
           </li>
 
-          <li className="cart-summary">
-            <span>$0.00</span>
+          <li className="cart-summary" onClick={openCart}>
+            <span>₦{cartTotal.toLocaleString()}</span>
             <div className="cart-icon-wrapper">
               <ShoppingCart size={18}  strokeWidth={3.0} />
-              <span className="cart-badge">0</span>
+              <span className="cart-badge">{cartCount}</span>
             </div>
           </li>
 

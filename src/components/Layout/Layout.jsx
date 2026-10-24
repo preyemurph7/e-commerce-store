@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import GoToCartButton from "../GoToCartButton/GoToCartButton";
 import ProductModal from "../ProductModal/ProductModal";
 import { useQuickView } from "../../Context/QuickViewContext";
+import CartDrawer from "../CartDrawer/CartDrawer";
 import Footer from "../Footer/Footer";
 
 const Layout = () => {
@@ -20,6 +21,7 @@ const Layout = () => {
           />
         )}
         <Footer/>
+        <CartDrawer />
         </>
     )
 }
