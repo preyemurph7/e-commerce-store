@@ -9,12 +9,14 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import { CartProvider } from "./Context/CartContext";
+import { QuickViewProvider } from "./Context/QuickViewContext";
 import './App.css'
 
 function App() {
   
   return (
     <CartProvider>
+      <QuickViewProvider>
       <BrowserRouter>
         <Routes>
           <Route element={<Layout/>}>
@@ -27,6 +29,7 @@ function App() {
              </Route>      
         </Routes>
     </BrowserRouter> 
+    </QuickViewProvider>
     </CartProvider>
   );
 }

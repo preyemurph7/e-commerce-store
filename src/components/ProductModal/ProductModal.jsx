@@ -6,16 +6,21 @@ import "./ProductModal.css";
 const ProductModal = ({ product, onClose }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [quantity, setQuantity] = useState(1);
+  const [selectedColor, setSelectedColor] = useState(product.colorAvailable[0]);
+  const [selectedSize, setSelectedSize] = useState(product.size[0]);
   const { addToCart } = useCart();
 
   useEffect(() => {
     setIsLoading(true);
+    setQuantity(1);
+    setSelectedColor(product.colorAvailable[0]);
+    setSelectedSize(product.size[0]);
     const timer = setTimeout(() => setIsLoading(false), 600);
     return () => clearTimeout(timer);
   }, [product]);
 
   const handleAddToCart = () => {
-    addToCart({ ...product, quantity });
+    addToCart({ ...product, quantity, selectedColor, selectedSize });
     onClose();
   };
 
@@ -42,14 +47,25 @@ const ProductModal = ({ product, onClose }) => {
               <p className="modal-label">Color</p>
               <div className="color-swatches">
                 {product.colorAvailable.map((color) => (
-                  <div key={color} className="color-swatch" style={{ backgroundColor: color }}></div>
+                  <div
+                    key={color}
+                    className={`color-swatch ${selectedColor === color ? "selected" : ""}`}
+                    style={{ backgroundColor: color }}
+                    onClick={() => setSelectedColor(color)}
+                  ></div>
                 ))}
               </div>
 
               <p className="modal-label">Size</p>
               <div className="size-options">
                 {product.size.map((sizeText) => (
-                  <div key={sizeText} className="size-box">{sizeText}</div>
+                  <div
+                    key={sizeText}
+                    className={`size-box ${selectedSize === sizeText ? "selected" : ""}`}
+                    onClick={() => setSelectedSize(sizeText)}
+                  >
+                    {sizeText}
+                  </div>
                 ))}
               </div>
 

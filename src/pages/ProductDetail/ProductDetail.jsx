@@ -19,6 +19,7 @@ const ProductDetail = () => {
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
 
+
   if (!product) {
     return <div className="product-detail-container"><p>Product not found.</p></div>;
   }
@@ -162,7 +163,7 @@ const ProductDetail = () => {
           <h2>Related products</h2>
           <div className="product-grid">
             {relatedProducts.map((p) => (
-              <ProductCard key={p.id} {...p} onQuickView={() => {}} />
+              <ProductCard key={p.id} {...p} />
             ))}
           </div>
         </div>

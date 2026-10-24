@@ -1,8 +1,11 @@
 import { Eye } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useQuickView } from "../../Context/QuickViewContext";
 import "./ProductCard.css";
 
 const ProductCard = ({ id, image, category, title, price, colorAvailable, size, onQuickView }) => {
+    const { setQuickViewProduct } = useQuickView();
+
     return (
         <div className="product-card">
             <div className="product-image-wrapper">
@@ -11,7 +14,7 @@ const ProductCard = ({ id, image, category, title, price, colorAvailable, size, 
                 </Link>
                 <button
                     className="quick-view-btn"
-                    onClick={() => onQuickView({ id, image, category, title, price, colorAvailable, size })}
+                    onClick={() => setQuickViewProduct({ id, image, category, title, price, colorAvailable, size })}
                     aria-label="Quick view"
                 >
                     <Eye size={18} />
