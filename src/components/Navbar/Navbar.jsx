@@ -2,10 +2,13 @@ import { NavLink } from "react-router-dom"
 import Logo from "../Logo/Logo"
 import { Search, ShoppingCart } from "lucide-react"
 import { useCart } from "../../Context/CartContext"
+import { useState } from "react"
+import SearchOverlay from "../SearchOverlay/SearchOverlay"
 import './Navbar.css'
 
 const Navbar = () => {
     const { cartCount, cartTotal, openCart } = useCart();
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     return(
         <>
@@ -20,10 +23,12 @@ const Navbar = () => {
         <ul className="center-nav-list">
             <li><Logo/></li>
         </ul>
-
+ 
         <ul className="right-nav-list">
           <li>
-            <Search size={18}  strokeWidth={3.0} />
+             <button className="search-btn" onClick={() => setIsSearchOpen(true)} aria-label="Search">
+               <Search size={18} strokeWidth={3.0} />
+             </button>
           </li>
 
           <li className="cart-summary" onClick={openCart}>
@@ -40,6 +45,7 @@ const Navbar = () => {
         </ul>
 
         </nav>
+        {isSearchOpen && <SearchOverlay onClose={() => setIsSearchOpen(false)} />}
         </>
     )
 }

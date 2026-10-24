@@ -140,6 +140,16 @@
     font-weight: 600;
 }
 
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: inherit;
+}
+
 /* .cart-badge:hover {
     background-color: #888;
 } */
