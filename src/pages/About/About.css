@@ -144,3 +144,62 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 900px) {
+  .about-container {
+    padding: 0 16px;
+  }
+
+  .about-text {
+    margin-top: 40px;
+  }
+
+  .parallax-rectangle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px 24px;
+    min-height: auto;
+    background-attachment: scroll;
+  }
+
+  .parallax-text,
+  .parallax-side-text {
+    max-width: 100%;
+  }
+
+  .parallax-text h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .how-it-started-container {
+    min-height: auto;
+  }
+
+  .how-it-started-text {
+    margin-top: 60px;
+  }
+
+  .last-container {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .left-side-image-div {
+    flex: none;
+    padding: 36px 24px;
+  }
+
+  .right-image {
+    flex: none;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 30px;
+  }
+}

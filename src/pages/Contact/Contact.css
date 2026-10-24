@@ -97,3 +97,39 @@
   cursor: pointer;
   align-self: flex-start;
 }
+
+@media (max-width: 900px) {
+  .contact-container {
+    padding: 0 16px;
+  }
+
+  .contact-text {
+    margin-top: 40px;
+  }
+
+  .contact-page-container {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .left-contact-info {
+    flex: none;
+    padding: 36px 24px;
+  }
+
+  .contact-form {
+    flex: none;
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-text h1 {
+    font-size: 30px;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

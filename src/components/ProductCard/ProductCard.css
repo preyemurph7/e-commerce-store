@@ -97,3 +97,30 @@
 .product-image-wrapper:hover .quick-view-btn {
   opacity: 1;
 }
+
+@media (hover: none) {
+  .quick-view-btn {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    padding: 4px;
+  }
+
+  .product-card h2 {
+    font-size: 16px;
+  }
+
+  .size-options,
+  .color-swatches {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .size-box {
+    padding: 3px 7px;
+    font-size: 11px;
+  }
+}

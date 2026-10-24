@@ -214,3 +214,56 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
+
+@media (max-width: 900px) {
+  .product-detail-container {
+    margin: 30px auto;
+    padding: 0 16px;
+  }
+
+  .product-detail-main {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .detail-image {
+    width: 100%;
+  }
+
+  .detail-info h1 {
+    font-size: 26px;
+  }
+
+  .related-products .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quantity-cart-row {
+    flex-wrap: wrap;
+  }
+
+  .detail-add-to-cart {
+    flex: 1;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  .review-form {
+    padding: 20px;
+  }
+
+  .review-name-email {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .related-products h2 {
+    font-size: 22px;
+  }
+}

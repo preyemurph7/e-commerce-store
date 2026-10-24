@@ -134,3 +134,25 @@
   border-color: black;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 94%;
+    max-height: 90vh;
+  }
+
+  .modal-body {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .modal-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .modal-loading {
+    min-height: 300px;
+  }
+}

@@ -37,3 +37,19 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+  .go-to-cart-btn {
+    top: auto;
+    bottom: 16px;
+    right: 12px;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .go-to-cart-btn span {
+    display: none;
+  }
+}

@@ -92,3 +92,10 @@
   padding: 20px 0;
   font-size: 14px;
 }
+
+/* SearchOverlay.css */
+@media (max-width: 480px) {
+  .search-overlay {
+    padding-top: 40px;
+  }
+}
