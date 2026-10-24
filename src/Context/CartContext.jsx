@@ -1,14 +1,35 @@
-import { createContext, useState, useContext } from "react";
-
+import { createContext, useState, useContext, useEffect } from "react";
+import { products } from "../data/productData";
 const CartContext = createContext();
 
+const loadCart = () => {
+  try {
+    const saved = JSON.parse(localStorage.getItem("tamluxe-cart")) || [];
+    return saved
+      .map((s) => {
+        const product = products.find((p) => p.id === s.id);
+        return product ? { ...product, ...s } : null;
+      })
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+};
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(loadCart);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   const openCart = () => setIsCartOpen(true);
   const closeCart = () => setIsCartOpen(false);
-
+  
+ useEffect(() => {
+  const minimal = cartItems.map(
+    ({ id, cartKey, quantity, selectedColor, selectedSize }) => ({
+      id, cartKey, quantity, selectedColor, selectedSize,
+    })
+  );
+  localStorage.setItem("tamluxe-cart", JSON.stringify(minimal));
+}, [cartItems]);
   const addToCart = (product) => {
     const quantityToAdd = product.quantity || 1;
     const cartKey = `${product.id}-${product.selectedColor}-${product.selectedSize}`;
