@@ -1,3 +1,4 @@
+
 # TamLuxe
 
 A responsive e-commerce storefront for men's and women's t-shirts, built with React as my first portfolio project.
@@ -20,10 +21,12 @@ A responsive e-commerce storefront for men's and women's t-shirts, built with Re
 
 ## Screenshots
 
-<img src="screenshots/home-desktop.webp" width="49%" />
-<img src="screenshots/product-desktop.webp" width="49%" />
-<img src="screenshots/cart-desktop.webp" width="49%" />
-<img src="screenshots/about-desktop.webp" width="49%" />
+<img width="1080" height="1440" alt="product-mobile webp" src="https://github.com/user-attachments/assets/cbbca7cd-33d6-4fdc-8a98-19526ebef2ae" />
+<img width="1600" height="1000" alt="product-desktop webp" src="https://github.com/user-attachments/assets/d96dcb33-dc1a-482d-807d-07b115b7c028" />
+<img width="1080" height="1440" alt="home-mobile webp" src="https://github.com/user-attachments/assets/32bc43cd-dff1-45aa-97a2-827f9760d0f2" />
+<img width="1600" height="1000" alt="home-desktop webp" src="https://github.com/user-attachments/assets/fe434f2e-e636-48d0-8b03-97e4a3881740" />
+<img width="1600" height="1000" alt="cart-desktop webp" src="https://github.com/user-attachments/assets/bfffa3ca-83bb-4a00-af29-098f60105db4" />
+<img width="1600" height="1000" alt="about-desktop webp" src="https://github.com/user-attachments/assets/60a7da80-3f88-4567-96f4-1ed3238becd4" />
 
 **On mobile**
 
