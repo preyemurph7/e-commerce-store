@@ -9,13 +9,12 @@ const About = () => {
             <div className='about-text'>
                 <h1>About</h1>
                 <div className='about-dash'></div>
-                <h3>Proin eu ante vel mauris molestie dignissim non eget nunc. Integer ac
-                 massa orci. Suspendisse vulputate semper nunc eget rhoncus.
+                <h3>TamLuxe is where swag meets casual: everyday t-shirts for men and women,
+                 made to look good and feel even better.
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ante vel mauris molestie 
-                 dignissim non eget nunc. Integer ac massa orci. Suspendisse vulputate semper nunc eget rhoncus.
-                 Ut sit amet porta sem, interdum tincidunt libero. Nulla vel quam lobortis, varius est <br />
-                 scelerisque, dapibus nisl.
+                <p>We design for real life. Soft fabrics, clean cuts, and graphics with personality,
+                 so you can put one on and head out the door without a second thought.
+                 Every shirt we stock has to pass one test: would you want to wear it again tomorrow?
                 </p>
             </div>
             <div className='parallax-rectangle'
@@ -27,14 +26,12 @@ const About = () => {
                     <div className='parallax-dash'></div>
                 </div>
                 <div className='parallax-side-text'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In a odit perspiciatis. 
-                    Facere velit assumenda, ad magnam corrupti quaerat facilis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                    Autem omnis unde porro dolorem culpa? Ad similique minus dolor ratione? 
-                    Quidem officia nemo nobis eum? Itaque vitae quo repellat dicta?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam fugit eveniet cumque nulla 
-                    voluptate voluptatem sunt magni! Sequi at exercitationem ut, minima, 
-                    consequuntur perspiciatis commodi quas voluptatem, corrupti nisi aliquam?
+                    Quality is where we start, not something we add at the end.
+                    We choose breathable, durable fabrics and keep our designs simple enough
+                    to last longer than a single season. Good style should not cost you comfort,
+                    and it should not fall apart after a few washes.
+                    Whether you are shopping for yourself or for someone you care about,
+                    we want every TamLuxe piece to feel like it was made for you.
                 </div>
             </div>
 
@@ -42,26 +39,23 @@ const About = () => {
                 <div className="how-it-started-text">
                     <h1>How it Started</h1>
                     <div className="how-it-started-dash"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Provident, laboriosam. Enim quasi ea in magni.
-                         Et explicabo unde natus amet.
+                    <p>TamLuxe began with a simple frustration: finding a t-shirt that looks sharp,
+                        fits well, and is incredibly durable.
+                        So we set out to make it easier.
                     </p>
                 </div>
 
 
                 <div className="last-container">
-                 <div className="left-side-div">
-                    <h1>Vel mauris molestie dignissim</h1>
-                    <h3>Proin eu ante vel mauris molestie dignissim non eget nunc.
-                         Integer ac massa orci. Suspendisse vulputate semper nunc 
-                         eget rhoncus.
+                 <div className="left-side-image-div">
+                    <h1>Made for everyday wear</h1>
+                    <h3>Great style starts with the basics, so we put our energy into getting them right.
                     </h3>
-                    <p>Praesent vel faucibus ligula. 
-                        Sed sit amet ipsum eget velit aliquet faucibus. 
-                        Maecenas et odio id turpis sollicitudin pulvinar sit amet vitae augue. 
-                        Phasellus nec ultricies arcu.
-                        Quisque efficitur tellus sit amet bibendum molestie. Duis id egestas odio.
-                        Phasellus lacinia ex quis faucibus tempor. Sed feugia.
+                    
+                    <p>From the first sketch to the final fold, we focus on fit, fabric, and finish.
+                        Our range for men and women keeps growing, but the idea stays the same:
+                        relaxed, well-made t-shirts you will reach for again and again.
+                        Thank you for being part of the story as we keep building.
                     </p>
                   </div>
 
