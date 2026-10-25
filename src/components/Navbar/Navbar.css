@@ -301,3 +301,13 @@
    .menu-toggle {
      align-items: center;
    }
+
+   .mobile-menu a:active {
+  background-color: #f5f5f5;
+}
+
+@media (hover: hover) {
+  .mobile-menu a:hover {
+    color: #888;
+  }
+}

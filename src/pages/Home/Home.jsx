@@ -16,7 +16,6 @@ const Home = () => {
     } else if (currentSort === "Sort by price: high to low") {
       sorted.sort((a, b) => b.price - a.price);
     }
-
     return sorted;
   };
 
@@ -29,7 +28,7 @@ const Home = () => {
           <p className="breadcrumb">Home / Shop</p>
           <h1>Shop</h1>
           <div className="results-sort-row">
-            <p>Showing 1-8 of 10 results</p>
+            <p>Showing 1-{sortedProducts.length} of {sortedProducts.length} results</p>
             <SortDropdown currentSort={currentSort} onSortChange={setCurrentSort} />
           </div>
         </div>

@@ -1,13 +1,13 @@
-import manInBlackTshirt from "../assets/products/men/man-in-black-tshirt.jpg";
-import manInPinkTshirt from "../assets/products/men/man-in-pink-tshirt.jpg";
-import manInPlainWhiteTee from "../assets/products/men/man-in-plainwhite-tee.jpg";
-import manInRedShirt from "../assets/products/men/man-in-redshirt.jpg";
-import manInWhiteTshirt from "../assets/products/men/man-in-whitetshirt.jpg";
-import womanInBlackTshirt from "../assets/products/women/woman-in-blacktshirt.jpg";
-import womanInMaroonBodyconTop from "../assets/products/women/woman-in-maroonbodycon-top.jpg";
-import womanInPinkShirt from "../assets/products/women/woman-in-pinkshirt.jpg";
-import womanInRedShirt from "../assets/products/women/woman-in-redshirt.jpg";
-import womanInWhiteTshirt from "../assets/products/women/woman-in-whiteshirt.jpg";
+import manInBlackTshirt from "../assets/products/men/man-in-black-tshirt.webp";
+import manInPinkTshirt from "../assets/products/men/man-in-pink-tshirt.webp";
+import manInPlainWhiteTee from "../assets/products/men/man-in-plainwhite-tee.webp";
+import manInRedShirt from "../assets/products/men/man-in-redshirt.webp";
+import manInWhiteTshirt from "../assets/products/men/man-in-whitetshirt.webp";
+import womanInBlackTshirt from "../assets/products/women/woman-in-blacktshirt.webp";
+import womanInMaroonBodyconTop from "../assets/products/women/woman-in-maroonbodycon-top.webp";
+import womanInPinkShirt from "../assets/products/women/woman-in-pinkshirt.webp";
+import womanInRedShirt from "../assets/products/women/woman-in-redshirt.webp";
+import womanInWhiteTshirt from "../assets/products/women/woman-in-whiteshirt.webp";
 
 export const products = [
     {

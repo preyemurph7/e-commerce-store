@@ -123,8 +123,9 @@
   gap: 0;
 }
 
-.left-side-div {
+.left-side-image-div {
   flex: 1;
+  min-width: 0;
   background-color: #fdeeee;
   display: flex;
   flex-direction: column;
@@ -133,13 +134,15 @@
   gap: 20px;
 }
 
-.left-side-div h1 {
-    font-size: 30px;
-    font-weight: 600;
+.left-side-image-div h1 {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .right-image {
   flex: 1;
+  min-height: 350px;
+  min-width: 0;
   aspect-ratio: 3 / 2;
   background-size: cover;
   background-position: center;
@@ -177,7 +180,7 @@
     min-height: auto;
   }
 
-  .how-it-started-text {
+  .how-it-started-text { 
     margin-top: 60px;
   }
 
@@ -195,6 +198,7 @@
     flex: none;
     width: 100%;
     aspect-ratio: 4 / 3;
+    min-height: 0;
   }
 }
 

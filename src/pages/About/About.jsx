@@ -1,5 +1,5 @@
-import parallaxImage from "../../assets/products/other/parallax-image.jpg";
-import aboutLastImage from "../../assets/products/other/about-last-image.jpg"
+import parallaxImage from "../../assets/products/other/parallax-image.webp";
+import aboutLastImage from "../../assets/products/other/about-last-image.webp"
 import './About.css'
 
 const About = () => {
@@ -51,7 +51,7 @@ const About = () => {
                     <h1>Made for everyday wear</h1>
                     <h3>Great style starts with the basics, so we put our energy into getting them right.
                     </h3>
-                    
+
                     <p>From the first sketch to the final fold, we focus on fit, fabric, and finish.
                         Our range for men and women keeps growing, but the idea stays the same:
                         relaxed, well-made t-shirts you will reach for again and again.
