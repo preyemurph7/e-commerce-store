@@ -1,0 +1,152 @@
+.checkout-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.checkout-container > h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.checkout-layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.checkout-form {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checkout-form h2 {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+.checkout-form input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.checkout-row {
+  display: flex;
+  gap: 14px;
+}
+
+.checkout-btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.order-summary {
+  flex: 1;
+  background: #fdeeee;
+  padding: 30px;
+}
+
+.order-summary h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0d9d9;
+}
+
+.summary-item img {
+  width: 56px;
+  height: 72px;
+  object-fit: cover;
+}
+
+.summary-item-info {
+  flex: 1;
+}
+
+.summary-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.summary-variant {
+  color: #777;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.summary-total {
+  font-weight: 700;
+  font-size: 16px;
+  border-top: 1px solid #f0d9d9;
+}
+
+.checkout-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 80px 24px;
+}
+
+.checkout-message p {
+  color: #666;
+  max-width: 420px;
+}
+
+@media (max-width: 800px) {
+  .checkout-layout {
+    flex-direction: column;
+  }
+}
+
+/* Checkout.css */
+@media (max-width: 480px) {
+  .checkout-container {
+    margin: 30px auto;
+  }
+
+  .checkout-container > h1 {
+    font-size: 26px;
+  }
+
+  .checkout-row {
+    flex-direction: column;
+  }
+
+  .order-summary {
+    padding: 20px;
+  }
+}

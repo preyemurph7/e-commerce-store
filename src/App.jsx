@@ -3,22 +3,38 @@ import Navbar from './components/Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
+import Women from './pages/Women/Women';
+import Men from './pages/Men/Men';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
+import { CartProvider } from "./Context/CartContext";
+import { QuickViewProvider } from "./Context/QuickViewContext";
+import Checkout from './pages/Checkout/Checkout';
+import Login from './pages/Login/Login';
 import './App.css'
 
 function App() {
   
   return (
+    <CartProvider>
+      <QuickViewProvider>
       <BrowserRouter>
         <Routes>
           <Route element={<Layout/>}>
              <Route path="/" element={<Home/>}/>
+             <Route path="/women" element={<Women/>} />
+             <Route path="/men" element={<Men/>} />
              <Route path="/about" element={<About/>} />
              <Route path="/contact" element={<Contact/>} />
+             <Route path="/product/:id" element={<ProductDetail/>} />
+             <Route path="/checkout" element={<Checkout/>} />
+              <Route path="/login" element={<Login/>} />
              </Route>      
         </Routes>
     </BrowserRouter> 
+    </QuickViewProvider>
+    </CartProvider>
   );
 }
 
