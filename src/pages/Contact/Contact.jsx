@@ -8,16 +8,16 @@ const Contact = () => {
             <div className='contact-text'>
                  <h1>Contact</h1>
                  <div className='contact-dash'></div>
-                 <h3>Proin eu ante vel mauris molestie dignissim non eget nunc. Integer ac massa orci. 
-                 Suspendisse vulputate semper nunc eget rhoncus.
+                 <h3>Questions about an order, a size, or anything else? 
+                 Send us a message and we will get back to you.
                  </h3>
             </div>
 
             <div className='contact-page-container'>
                 <div className='left-contact-info'>
                     <h1>Get in touch</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                       Ut id leo tempor, congue justo at, lobortis orci.
+                    <p>Have a question or just want to say hello? Use the details below 
+                       or fill in the form, and we will reply as soon as we can.
                     </p>
                     <div className='info-block'>
                          <MapIcon/> 

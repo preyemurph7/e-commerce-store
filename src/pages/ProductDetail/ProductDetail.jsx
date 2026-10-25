@@ -42,9 +42,9 @@ const ProductDetail = () => {
           <h1>{product.title}</h1>
           <p className="detail-price">₦{product.price.toLocaleString()}</p>
           <p className="detail-description-snippet">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus interdum eros.
+            A relaxed, everyday t-shirt made to feel as good as it looks.
+            Soft, breathable, and easy to style with whatever is already in your wardrobe.
           </p>
-
           <p className="detail-label">Color</p>
           <div className="color-swatches">
             {product.colorAvailable.map((color) => (
@@ -98,7 +98,7 @@ const ProductDetail = () => {
         {showDescription && (
           <div className="accordion-body">
             <h4>About the product</h4>
-            <p>Our T-Shirts are lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+             <p>Our t-shirts are made for everyday wear: soft against the skin, breathable through the day, and cut for an easy, relaxed fit. They are simple enough to wear with anything and built to hold their shape wash after wash.</p>
             <ul>
               <li>100% Cotton</li>
               <li>260gsm</li>
