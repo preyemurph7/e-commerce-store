@@ -293,3 +293,11 @@
     font-size: 22px;
   }
 }
+
+   .navbar .menu-toggle-item {
+     align-items: center;
+   }
+
+   .menu-toggle {
+     align-items: center;
+   }
